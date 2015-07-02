@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <vector>
+#include <list>
 
 class MinStack {
 public:
@@ -21,12 +22,6 @@ public:
 
     void Display();
 
-private:
-	struct SortMethod {
-		bool operator()(const int &first, const int &second) {
-			return (first > second);
-		}
-	};
 private:
     std::vector<int> num_buffer_;
     std::vector<int> min_buffer_;

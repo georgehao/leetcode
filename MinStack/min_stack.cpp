@@ -7,7 +7,6 @@
 
 
 #include "min_stack.h"
-#include <algorithm>
 
 MinStack::MinStack()
 {
@@ -18,8 +17,10 @@ MinStack::MinStack()
 void MinStack::push(int x)
 {
 	num_buffer_.push_back(x);
-	min_buffer_.push_back(x);
-	std::sort(min_buffer_.begin(), min_buffer_.end(), SortMethod());
+
+	if (min_buffer_.empty() || min_buffer_.back() >= x) {
+		min_buffer_.push_back(x);
+	}
 }
 
 void MinStack::pop()
