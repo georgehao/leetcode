@@ -14,4 +14,6 @@ Just for www.leetcode.com test to improve my program skills. If something is wro
 	Given an integer, write a function to determine if it is a power of two.   
 	https://leetcode.com/problems/power-of-two/
 
-	
+4. LRU Cache   
+	Design and implement a data structure for Least Recently Used (LRU) cache.   
+	https://leetcode.com/problems/lru-cache/  
