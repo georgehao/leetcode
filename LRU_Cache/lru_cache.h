@@ -24,6 +24,15 @@
 
 #include <iostream>
 #include <tr1/unordered_map>
+#include <list>
+
+typedef struct Node {
+    int key;
+	int value;
+	Node(int k, int v) : key(k), value(v) {}
+} Node_T;
+
+typedef std::list<Node_T>::iterator node_it;
 
 class LRUCache{
 public:
@@ -32,11 +41,9 @@ public:
     void set(int key, int value);
 
 private:
-
-private:
     int  capacity_;
-    std::tr1::unordered_map<int, int> lru_map_;
-    std::list<int>  lru_list_;
+    std::list<Node_T>  lru_list_;
+    std::tr1::unordered_map<int, node_it> lru_map_;
 };
 
 #endif /* LRU_CACHE_LRU_CACHE_H_ */
