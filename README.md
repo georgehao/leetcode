@@ -17,6 +17,11 @@ Just for www.leetcode.com test to improve my program skills. If something is wro
 4. LRU Cache   
 	Design and implement a data structure for Least Recently Used (LRU) cache.   
 	https://leetcode.com/problems/lru-cache/   
+
 5. Reverse Linked List  
 	Reverse a singly linked list.   
-	https://leetcode.com/problems/reverse-linked-list/   
+	https://leetcode.com/problems/reverse-linked-list/    
+
+6. Invert Binary Tree   
+	Invert a binary tree.    
+	https://leetcode.com/problems/invert-binary-tree/  
