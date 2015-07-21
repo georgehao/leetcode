@@ -24,4 +24,7 @@ Just for www.leetcode.com test to improve my program skills. If something is wro
 
 6. Invert Binary Tree   
 	Invert a binary tree.    
-	https://leetcode.com/problems/invert-binary-tree/  
+	https://leetcode.com/problems/invert-binary-tree/    
+7. Lowest Common Ancestor of a Binary Search Tree  
+	Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST  
+	https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/  
