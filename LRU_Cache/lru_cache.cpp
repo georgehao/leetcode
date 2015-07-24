@@ -7,7 +7,7 @@
 
 #include "lru_cache.h"
 
-LRUCache::LRUCache(int capacity) : capacity_(capacity)
+LRUCache::LRUCache(int capacity) : size_(0), capacity_(capacity)
 {
     lru_map_.clear();
     lru_list_.clear();
@@ -43,15 +43,16 @@ void LRUCache::set(int key, int value)
         return;
     }
 
-    if (lru_list_.size() >= capacity_) {
+    if (size_ >= capacity_) {
         int exsit_key = lru_list_.back().key;
         lru_list_.pop_back();
         lru_map_.erase(exsit_key);
+        --size_;
     }
 
     lru_list_.push_front(Node_T(key, value));
     lru_map_[key] = lru_list_.begin();
-
+    ++size_;
     return;
 }
 

@@ -41,6 +41,7 @@ public:
     void set(int key, int value);
 
 private:
+    int  size_;
     int  capacity_;
     std::list<Node_T>  lru_list_;
     std::tr1::unordered_map<int, node_it> lru_map_;
