@@ -23,9 +23,7 @@ public:
 
         int add_num = 0;
         for (int i = 0; i < num_bits; i++) {
-            char buf[2] = {0};
-            memcpy(buf, &num_str[i], 1);
-            add_num += atoi(buf);
+            add_num += num_str[i] - '0';
         }
 
         return addDigits(add_num);
